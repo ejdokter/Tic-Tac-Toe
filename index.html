@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p class="gameover">tie game</p>
+        <button class="resetbtn">Reset</button>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="title">Tic Tac Toe</h1>
+      <!-- <div class="gameboard">
+        <div class="box" id="box_0"></div>
+        <div class="box" id="box_1"></div>
+        <div class="box" id="box_2"></div>
+        <div class="box" id="box_3"></div>
+        <div class="box" id="box_4"></div>
+        <div class="box" id="box_5"></div>
+        <div class="box" id="box_6"></div>
+        <div class="box" id="box_7"></div>
+        <div class="box" id="box_8"></div>
+      </div> -->
+      <div class="turn"></div>
+      <table class="table">
+        <tbody id="tbodyid">
+          <tr>
+            <th class="cell" id="table_0"></th>
+            <th class="cell" id="table_1"></th>
+            <th class="cell" id="table_2"></th>
+          </tr>
+          <tr>
+            <th class="cell" id="table_3"></th>
+            <th class="cell" id="table_4"></th>
+            <th class="cell" id="table_5"></th>
+          </tr>
+          <tr>
+            <th class="cell" id="table_6"></th>
+            <th class="cell" id="table_7"></th>
+            <th class="cell" id="table_8"></th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

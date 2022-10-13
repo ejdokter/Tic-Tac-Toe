@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(45, 78, 45);
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.resetbtn {
+  width: 80px;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 50vw;
+  height: 50vh;
+}
+
+.table {
+  margin-top: 100px;
+  height: 50vh;
+  width: 50vw;
+  max-width: 450px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-color: white;
+}
+
+.box {
+  height: auto;
+  width: auto;
+  border: 3px solid black;
+}
+
+.cell {
+  height: 50px;
+  width: 50px;
+  border: 3px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+  font-size: xx-large;
+  color: rgb(136, 205, 255);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  color: black;
+}
+
+/* The Close Button */
+.close {
+  align-self: flex-end;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gameover {
+  margin-bottom: 20px;
+}
+
+#box_0,
+#box_1,
+#box_2,
+#table_0,
+#table_1,
+#table_2 {
+  border-top: none;
+}
+
+#box_0,
+#box_3,
+#box_6,
+#table_0,
+#table_3,
+#table_6 {
+  border-left: none;
+}
+
+#box_2,
+#box_5,
+#box_8,
+#table_2,
+#table_5,
+#table_8 {
+  border-right: none;
+}
+
+#box_6,
+#box_7,
+#box_8,
+#table_6,
+#table_7,
+#table_8 {
+  border-bottom: none;
+}
